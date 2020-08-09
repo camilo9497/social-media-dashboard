@@ -1,0 +1,33 @@
+header {
+  background-color: var(--header);
+  height: 180px;
+  padding-top: 45px;
+  border-radius: 0 0 10px 20px;
+}
+.container-title-social {
+  width: 100%;
+  color: var(--texto);
+}
+.container-title-social h1 {
+  color: var(--texto);
+  font-size: 26px;
+}
+.container-total-followers {
+  color: var(--azulDesaturado);
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+h3 {
+  font-size: 14px;
+}
+.container-total-followers p {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    height: 210px;
+  }
+}

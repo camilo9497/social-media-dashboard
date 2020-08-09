@@ -1,0 +1,95 @@
+.card-principales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-color: var(--cardBackground);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-principales:nth-child(1)::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: var(--Facebook);
+  width: 100%;
+}
+.card-principales:nth-child(2)::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: var(--Twitter);
+  width: 100%;
+}
+.card-principales:nth-child(3)::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    var(--Instagram1) 0%,
+    var(--Instagram2) 100%
+  );
+  width: 100%;
+}
+.card-principales:nth-child(4)::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: var(--YouTube);
+  width: 100%;
+}
+.card-principales:hover,
+.card-secundarias:hover {
+  background-color: var(--hoverCard);
+}
+
+.container-user1 {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.icon-red-social {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+.user {
+  font-size: 0.7em;
+  color: var(--azulDesaturado);
+  font-weight: 700;
+}
+.anio {
+  color: var(--texto);
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.text-followers {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  color: var(--azulDesaturado);
+}
+.container-today-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.today {
+  color: var(--LimeGreen);
+  font-size: 0.6em;
+  font-weight: 700;
+}
+.icono-arriba-abajo {
+  width: 6px;
+  height: 4px;
+  margin-right: 5px;
+}
+.rojo {
+  color: var(--BrightRed);
+}

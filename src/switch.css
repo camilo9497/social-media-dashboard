@@ -1,0 +1,56 @@
+.container-modo {
+  width: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.container-modo p {
+  color: var(--azulDesaturado);
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.checkbox {
+  display: none;
+}
+.checkbox:checked ~ .switch::before {
+  transform: translateX(0px);
+}
+.switch {
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  display: block;
+  background: var(--backgroundSwitch);
+  padding: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+  user-select: none;
+}
+.switch:hover {
+  background: linear-gradient(
+    to right,
+    var(--degradadoSwitch1) 0%,
+    var(--degradadoSwitch2) 100%
+  );
+}
+.switch:before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: var(--header);
+  transform: translateX(25px);
+  transition: 0.3s;
+  will-change: transform;
+}
+
+@media screen and (max-width: 700px) {
+  .container-modo {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+.container-overview {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.container-estadisticas-secundarias {
+  width: 100%;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+.overview {
+  font-size: 24px;
+  color: var(--azulDesaturado);
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .container-overview {
+    padding: 0 25px;
+  }
+}
